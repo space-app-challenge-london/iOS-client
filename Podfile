@@ -1,11 +1,15 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
+platform :ios, '9.0'
 
-use_frameworks!
+def rx
+    pod 'RxSwift', '~> 3.0'
+    pod 'RxCocoa', '~> 3.0'
+end
+
 target 'SpaceApps001' do
-
-  pod 'AEXML'
-  pod 'Alamofire', '~> 4.4'
-  pod 'SwiftyJSON'
-
- end
+    use_frameworks!
+    rx
+    pod 'AEXML'
+    pod 'Alamofire', '~> 4.4'
+    pod 'SwiftyJSON'
+end

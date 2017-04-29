@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class LocationSelectionViewController: UIViewController {
 
+    private let bag = DisposeBag()
     @IBOutlet weak var tableview: UITableView!
 
     private var dataSource: DataSource<LocationSelectionTableViewCell, String>!
@@ -18,6 +21,11 @@ class LocationSelectionViewController: UIViewController {
         super.viewDidLoad()
         title = "🇺🇸 select a state"
         configureTableview()
+
+        tableview.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
+            let state = states[indexPath.row]
+            self?.performSegue(withIdentifier: "selectProductSegue", sender: state)
+        }).addDisposableTo(bag)
     }
 
     private func configureTableview() {
