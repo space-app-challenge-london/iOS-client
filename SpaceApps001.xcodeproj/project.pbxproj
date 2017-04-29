@@ -11,6 +11,11 @@
 		A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */; };
 		A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06F67621EB4D2D10043A2A6 /* Assets.xcassets */; };
 		A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */; };
+		A09897AB1EB521A8001B06DD /* ProductStages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09897AA1EB521A8001B06DD /* ProductStages.storyboard */; };
+		A09897AE1EB521B7001B06DD /* ProductStagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09897AC1EB521B7001B06DD /* ProductStagesTableViewCell.swift */; };
+		A09897AF1EB521B7001B06DD /* ProductStagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */; };
+		A09897B11EB521CE001B06DD /* ProductStagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */; };
+		A09897B31EB521DF001B06DD /* ProcessStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09897B21EB521DF001B06DD /* ProcessStage.swift */; };
 		BBF5F3251EB5063100E6F064 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3241EB5063100E6F064 /* Root.storyboard */; };
 		BBF5F3271EB5067A00E6F064 /* LocationSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3261EB5067A00E6F064 /* LocationSelection.storyboard */; };
 		BBF5F3291EB5068900E6F064 /* ProductSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */; };
@@ -34,6 +39,11 @@
 		A06F67621EB4D2D10043A2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06F67651EB4D2D10043A2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06F67671EB4D2D10043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09897AA1EB521A8001B06DD /* ProductStages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductStages.storyboard; sourceTree = "<group>"; };
+		A09897AC1EB521B7001B06DD /* ProductStagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductStagesTableViewCell.swift; sourceTree = "<group>"; };
+		A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductStagesTableViewCell.xib; sourceTree = "<group>"; };
+		A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductStagesViewController.swift; sourceTree = "<group>"; };
+		A09897B21EB521DF001B06DD /* ProcessStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessStage.swift; sourceTree = "<group>"; };
 		BBF5F3241EB5063100E6F064 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		BBF5F3261EB5067A00E6F064 /* LocationSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationSelection.storyboard; sourceTree = "<group>"; };
 		BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductSelection.storyboard; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 				BBF5F3241EB5063100E6F064 /* Root.storyboard */,
 				BBF5F3261EB5067A00E6F064 /* LocationSelection.storyboard */,
 				BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */,
+				A09897AA1EB521A8001B06DD /* ProductStages.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 			children = (
 				BBF5F3341EB508AD00E6F064 /* Views */,
 				BBF5F32B1EB5083300E6F064 /* LocationSelectionViewController.swift */,
+				A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */,
 			);
 			name = LocationSelection;
 			sourceTree = "<group>";
@@ -154,6 +166,8 @@
 			children = (
 				BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */,
 				BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */,
+				A09897AC1EB521B7001B06DD /* ProductStagesTableViewCell.swift */,
+				A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF5F33A1EB50B9800E6F064 /* States.swift */,
+				A09897B21EB521DF001B06DD /* ProcessStage.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -255,9 +270,11 @@
 			files = (
 				BBF5F3251EB5063100E6F064 /* Root.storyboard in Resources */,
 				A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */,
+				A09897AF1EB521B7001B06DD /* ProductStagesTableViewCell.xib in Resources */,
 				BBF5F3291EB5068900E6F064 /* ProductSelection.storyboard in Resources */,
 				BBF5F3381EB508C200E6F064 /* LocationSelectionTableViewCell.xib in Resources */,
 				BBF5F3271EB5067A00E6F064 /* LocationSelection.storyboard in Resources */,
+				A09897AB1EB521A8001B06DD /* ProductStages.storyboard in Resources */,
 				A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,9 +338,12 @@
 				BBF5F32C1EB5083300E6F064 /* LocationSelectionViewController.swift in Sources */,
 				BBF5F33B1EB50B9800E6F064 /* States.swift in Sources */,
 				A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */,
+				A09897B31EB521DF001B06DD /* ProcessStage.swift in Sources */,
 				BBF5F3371EB508C200E6F064 /* LocationSelectionTableViewCell.swift in Sources */,
 				BBF5F33E1EB516B900E6F064 /* ProductSelectionViewController.swift in Sources */,
+				A09897AE1EB521B7001B06DD /* ProductStagesTableViewCell.swift in Sources */,
 				BBF5F3321EB5088C00E6F064 /* DataSource.swift in Sources */,
+				A09897B11EB521CE001B06DD /* ProductStagesViewController.swift in Sources */,
 				BBF5F3411EB5187D00E6F064 /* Storyboard.swift in Sources */,
 				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,
 			);
