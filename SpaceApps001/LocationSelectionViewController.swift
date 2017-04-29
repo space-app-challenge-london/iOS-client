@@ -21,12 +21,19 @@ class LocationSelectionViewController: UIViewController {
     private var productSegue: AnyObserver<String> {
         return NavigationSegue(fromViewController: self.navigationController!,
                                toViewControllerFactory: { (sender, context) -> ProductSelectionViewController in
-                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.product, identifier: ProductSelectionViewController.identifier) as? ProductSelectionViewController else {
+                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.product,
+                                                                                      identifier: ProductSelectionViewController.identifier) as? ProductSelectionViewController else {
                                     return ProductSelectionViewController()
                                 }
                                 productSelection.state = context
                                 return productSelection
         }).asObserver()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let indexPathSelected = tableview.indexPathForSelectedRow else {return}
+        tableview.deselectRow(at: indexPathSelected, animated: false)
     }
 
     override func viewDidLoad() {
