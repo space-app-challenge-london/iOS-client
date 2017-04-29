@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxSegue
 
 class LocationSelectionViewController: UIViewController {
 
@@ -17,15 +18,25 @@ class LocationSelectionViewController: UIViewController {
 
     private var dataSource: DataSource<LocationSelectionTableViewCell, String>!
 
+    private var productSegue: AnyObserver<String> {
+        return NavigationSegue(fromViewController: self.navigationController!,
+                               toViewControllerFactory: { (sender, context) -> ProductSelectionViewController in
+                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.product, identifier: ProductSelectionViewController.identifier) as? ProductSelectionViewController else {
+                                    return ProductSelectionViewController()
+                                }
+                                productSelection.state = context
+                                return productSelection
+        }).asObserver()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "🇺🇸 select a state"
         configureTableview()
 
-        tableview.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
-            let state = states[indexPath.row]
-            self?.performSegue(withIdentifier: "selectProductSegue", sender: state)
-        }).addDisposableTo(bag)
+        tableview.rx.itemSelected.flatMap({ indexPath in
+            return Observable.just(states[indexPath.row])
+        }).bindTo(productSegue).addDisposableTo(bag)
     }
 
     private func configureTableview() {

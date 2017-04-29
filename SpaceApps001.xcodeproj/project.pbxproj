@@ -21,6 +21,8 @@
 		BBF5F3371EB508C200E6F064 /* LocationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */; };
 		BBF5F3381EB508C200E6F064 /* LocationSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */; };
 		BBF5F33B1EB50B9800E6F064 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F33A1EB50B9800E6F064 /* States.swift */; };
+		BBF5F33E1EB516B900E6F064 /* ProductSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F33D1EB516B900E6F064 /* ProductSelectionViewController.swift */; };
+		BBF5F3411EB5187D00E6F064 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F3401EB5187D00E6F064 /* Storyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationSelectionTableViewCell.xib; sourceTree = "<group>"; };
 		BBF5F33A1EB50B9800E6F064 /* States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		BBF5F33D1EB516B900E6F064 /* ProductSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSelectionViewController.swift; sourceTree = "<group>"; };
+		BBF5F3401EB5187D00E6F064 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		A06F67581EB4D2D10043A2A6 /* SpaceApps001 */ = {
 			isa = PBXGroup;
 			children = (
+				BBF5F33F1EB5187100E6F064 /* Navigation */,
+				BBF5F33C1EB516A400E6F064 /* ProductSelection */,
 				BBF5F3391EB50B8B00E6F064 /* Models */,
 				BBF5F3331EB508A200E6F064 /* TableView */,
 				BBF5F32A1EB507E900E6F064 /* LocationSelection */,
@@ -158,6 +164,22 @@
 				BBF5F33A1EB50B9800E6F064 /* States.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BBF5F33C1EB516A400E6F064 /* ProductSelection */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F33D1EB516B900E6F064 /* ProductSelectionViewController.swift */,
+			);
+			name = ProductSelection;
+			sourceTree = "<group>";
+		};
+		BBF5F33F1EB5187100E6F064 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F3401EB5187D00E6F064 /* Storyboard.swift */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 		FB2A2B9C2FEE8B0AAD3A39B0 /* Frameworks */ = {
@@ -300,7 +322,9 @@
 				BBF5F33B1EB50B9800E6F064 /* States.swift in Sources */,
 				A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */,
 				BBF5F3371EB508C200E6F064 /* LocationSelectionTableViewCell.swift in Sources */,
+				BBF5F33E1EB516B900E6F064 /* ProductSelectionViewController.swift in Sources */,
 				BBF5F3321EB5088C00E6F064 /* DataSource.swift in Sources */,
+				BBF5F3411EB5187D00E6F064 /* Storyboard.swift in Sources */,
 				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
