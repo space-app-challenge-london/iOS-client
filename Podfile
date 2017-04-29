@@ -13,4 +13,5 @@ target 'SpaceApps001' do
     pod 'AEXML'
     pod 'Alamofire', '~> 4.4'
     pod 'SwiftyJSON'
+    pod 'Cartography'
 end

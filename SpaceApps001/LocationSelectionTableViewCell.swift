@@ -16,6 +16,10 @@ class LocationSelectionTableViewCell: UITableViewCell, CellType {
         super.awakeFromNib()
     }
 
+    static func height(model: Model) -> CGFloat {
+        return 44
+    }
+
     func configure(model: String) {
         label.text = model
     }

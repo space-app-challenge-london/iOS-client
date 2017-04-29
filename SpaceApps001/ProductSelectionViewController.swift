@@ -10,49 +10,39 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxSegue
+import Cartography
 
 class ProductSelectionViewController: UIViewController {
 
-    private let bag = DisposeBag()
-    @IBOutlet weak var tableview: UITableView!
     var state: String?
 
-    var products = [Product]()
-    private var dataSource: DataSource<ProductTableViewCell, Product>!
+    private let bag = DisposeBag()
+    private let listview = ListView<ProductTableViewCell, Product>(datas: Product.fake())
 
-    private var productStagesSegue: AnyObserver<String> {
+    private var productStagesSegue: AnyObserver<Product> {
         return NavigationSegue(fromViewController: self.navigationController!,
                                toViewControllerFactory: { (sender, context) -> ProductStagesViewController in
                                 guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productStages,
                                                                                       identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
                                                                                         return ProductStagesViewController()
                                 }
-//                                productSelection.state = context
+                                productSelection.product = context
                                 return productSelection
         }).asObserver()
     }
-    
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        listview.reset()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = state
-        products = Product.fake()
-        configureTableview()
-        
-        tableview.rx.itemSelected.flatMap({ indexPath in
-            return Observable.just(states[indexPath.row])
-        }).bindTo(productStagesSegue).addDisposableTo(bag)
-    }
-
-    private func configureTableview() {
-        tableview.registerCell(identifier: ProductTableViewCell.identifier)
-        tableview.tableFooterView = UIView()
-        tableview.delegate = self
-        dataSource = DataSource<ProductTableViewCell, Product>(tableview: tableview, datas: products)
-    }
-}
-
-extension ProductSelectionViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        view.addSubview(listview)
+        constrain(listview, view) { listview, view in
+            listview.edges == view.edges
+        }
+        listview.modelSelect.bindTo(productStagesSegue).addDisposableTo(bag)
     }
 }

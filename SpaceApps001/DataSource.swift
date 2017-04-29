@@ -26,6 +26,7 @@ class DataSource<C, T>: NSObject, UITableViewDataSource where C: CellType, T == 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("datas : \(datas)")
         return datas.count
     }
     

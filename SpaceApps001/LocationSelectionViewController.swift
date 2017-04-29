@@ -10,13 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxSegue
+import Cartography
 
 class LocationSelectionViewController: UIViewController {
 
     private let bag = DisposeBag()
-    @IBOutlet weak var tableview: UITableView!
 
-    private var dataSource: DataSource<LocationSelectionTableViewCell, String>!
+    private let listview = ListView<LocationSelectionTableViewCell, String>(datas: states)
 
     private var productSegue: AnyObserver<String> {
         return NavigationSegue(fromViewController: self.navigationController!,
@@ -32,23 +32,16 @@ class LocationSelectionViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let indexPathSelected = tableview.indexPathForSelectedRow else {return}
-        tableview.deselectRow(at: indexPathSelected, animated: false)
+        listview.reset()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "🇺🇸 select a state"
-        configureTableview()
-
-        tableview.rx.itemSelected.flatMap({ indexPath in
-            return Observable.just(states[indexPath.row])
-        }).bindTo(productSegue).addDisposableTo(bag)
-    }
-
-    private func configureTableview() {
-        tableview.registerCell(identifier: LocationSelectionTableViewCell.identifier)
-        tableview.tableFooterView = UIView()
-        dataSource = DataSource<LocationSelectionTableViewCell, String>(tableview: tableview, datas: states)
+        view.addSubview(listview)
+        constrain(listview, view) { listview, view in
+            listview.edges == view.edges
+        }
+        listview.modelSelect.bindTo(productSegue).addDisposableTo(bag)
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 protocol CellType {
     associatedtype Model
     static var identifier: String {get}
+    static func height(model: Model) -> CGFloat
     func configure(model: Model)
 }
 

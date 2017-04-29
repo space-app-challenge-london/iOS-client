@@ -17,6 +17,10 @@ class ProductTableViewCell: UITableViewCell, CellType {
         super.awakeFromNib()
     }
 
+    static func height(model: Model) -> CGFloat {
+        return 90
+    }
+
     func configure(model: Product) {
         self.imageProduct.image = model.image
         self.labelTitle.text = model.title

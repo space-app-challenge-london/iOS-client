@@ -16,8 +16,9 @@ class ProductStagesViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     private var dataSource: DataSource<ProductStagesTableViewCell, ProcessStage>!
-    
-    var stages: [ProcessStage]?
+
+    var product: Product?
+    private var stages: [ProcessStage]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
