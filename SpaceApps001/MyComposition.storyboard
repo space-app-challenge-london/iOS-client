@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9u0-og-jSq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Composition View Controller-->
+        <scene sceneID="tPz-px-OQW">
+            <objects>
+                <viewController id="9u0-og-jSq" customClass="MyCompositionViewController" customModule="SpaceApps001" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQz-0W-LNA"/>
+                        <viewControllerLayoutGuide type="bottom" id="pAw-AU-mgK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8g-Ms-rpt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOD-v7-ncL">
+                                <rect key="frame" x="0.0" y="569" width="375" height="98"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DOM-UV-wMe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w63-wg-rT0">
+                                            <rect key="frame" x="35" y="24" width="304" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                            <state key="normal" title="New">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="w63-wg-rT0" secondAttribute="trailing" constant="36" id="FnV-nc-gMy"/>
+                                        <constraint firstAttribute="bottom" secondItem="w63-wg-rT0" secondAttribute="bottom" constant="24" id="YiT-cj-RuF"/>
+                                        <constraint firstItem="w63-wg-rT0" firstAttribute="top" secondItem="DOM-UV-wMe" secondAttribute="top" constant="24" id="dK5-rD-QML"/>
+                                        <constraint firstItem="w63-wg-rT0" firstAttribute="leading" secondItem="DOM-UV-wMe" secondAttribute="leading" constant="35" id="eo3-hm-pPU"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="mSW-s4-ePP"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pAw-AU-mgK" firstAttribute="top" secondItem="nOD-v7-ncL" secondAttribute="bottom" id="8Fe-cE-lIe"/>
+                            <constraint firstItem="nOD-v7-ncL" firstAttribute="leading" secondItem="b8g-Ms-rpt" secondAttribute="leading" id="OAa-iQ-0tg"/>
+                            <constraint firstAttribute="trailing" secondItem="nOD-v7-ncL" secondAttribute="trailing" id="amH-jy-JcF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5T-dw-djE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="-316"/>
+        </scene>
+    </scenes>
+</document>

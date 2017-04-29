@@ -21,7 +21,7 @@ class ProductStagesTableViewCell: UITableViewCell, CellType {
         super.awakeFromNib()
     }
 
-    static func height(model: Model) -> CGFloat {
+    static func height(model: ProcessStage) -> CGFloat {
         return 44
     }
     

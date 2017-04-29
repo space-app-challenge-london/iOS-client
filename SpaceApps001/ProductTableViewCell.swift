@@ -17,7 +17,7 @@ class ProductTableViewCell: UITableViewCell, CellType {
         super.awakeFromNib()
     }
 
-    static func height(model: Model) -> CGFloat {
+    static func height(model: Product) -> CGFloat {
         return 90
     }
 

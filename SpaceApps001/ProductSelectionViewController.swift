@@ -33,6 +33,7 @@ class ProductSelectionViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        title = "Foods"
         listview.reset()
     }
 

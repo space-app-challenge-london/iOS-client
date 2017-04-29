@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0rw-Y0-Uw0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zQk-Ym-UPG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,23 +16,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="e7r-GN-NTy" kind="relationship" relationship="rootViewController" id="oLD-ir-a0Z"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Gs-9q-FMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-546" y="188"/>
+            <point key="canvasLocation" x="-230" y="1956"/>
         </scene>
-        <!--LocationSelection-->
+        <!--ProductSelection-->
         <scene sceneID="r5R-bC-vA7">
             <objects>
-                <viewControllerPlaceholder storyboardName="LocationSelection" id="e7r-GN-NTy" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ProductSelection" id="e7r-GN-NTy" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="LtW-4e-dQ9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOQ-eS-EIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="187"/>
+            <point key="canvasLocation" x="1140" y="262"/>
+        </scene>
+        <!--food-->
+        <scene sceneID="iYY-Xg-s0q">
+            <objects>
+                <navigationController id="2TY-C6-yjk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="food" image="food" selectedImage="food" id="eHo-Lr-nVt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="5Dx-Ja-Z13">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="e7r-GN-NTy" kind="relationship" relationship="rootViewController" id="q63-JU-074"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBV-A0-V2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="515"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="x96-2d-zZh">
+            <objects>
+                <tabBarController id="zQk-Ym-UPG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="JKc-FJ-g67">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Smq-Ig-erK" kind="relationship" relationship="viewControllers" id="vbj-wZ-ffO"/>
+                        <segue destination="2TY-C6-yjk" kind="relationship" relationship="viewControllers" id="VBr-xM-lYd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xm5-D1-Ntx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-982" y="106"/>
+        </scene>
+        <!--recipe-->
+        <scene sceneID="Ygp-PA-UUe">
+            <objects>
+                <navigationController id="Smq-Ig-erK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="recipe" image="recipe" selectedImage="recipe" id="gHh-WL-f5M"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="rzA-l9-Asw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xWM-0x-fFq" kind="relationship" relationship="rootViewController" id="HoG-8U-4Nl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GjD-D0-pKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="-310"/>
+        </scene>
+        <!--MyComposition-->
+        <scene sceneID="hSn-rx-7UU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyComposition" id="xWM-0x-fFq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tns-6s-d0r"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnP-0H-xQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159" y="36"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food" width="32" height="32"/>
+        <image name="recipe" width="24" height="24"/>
+    </resources>
 </document>
