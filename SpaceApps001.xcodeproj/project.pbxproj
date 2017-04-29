@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		76D64CC917E5806C0F364252 /* Pods_SpaceApps001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58226331B839DBDFB9A70E26 /* Pods_SpaceApps001.framework */; };
 		A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */; };
-		A06F675C1EB4D2D10043A2A6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F675B1EB4D2D10043A2A6 /* FirstViewController.swift */; };
-		A06F675E1EB4D2D10043A2A6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F675D1EB4D2D10043A2A6 /* SecondViewController.swift */; };
-		A06F67611EB4D2D10043A2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06F675F1EB4D2D10043A2A6 /* Main.storyboard */; };
 		A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06F67621EB4D2D10043A2A6 /* Assets.xcassets */; };
 		A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */; };
-		A0E0EF371EB4D718005D4534 /* 001.xml in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EF361EB4D718005D4534 /* 001.xml */; };
+		BBF5F3251EB5063100E6F064 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3241EB5063100E6F064 /* Root.storyboard */; };
+		BBF5F3271EB5067A00E6F064 /* LocationSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3261EB5067A00E6F064 /* LocationSelection.storyboard */; };
+		BBF5F3291EB5068900E6F064 /* ProductSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */; };
+		BBF5F32C1EB5083300E6F064 /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F32B1EB5083300E6F064 /* LocationSelectionViewController.swift */; };
+		BBF5F32E1EB5088500E6F064 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F32D1EB5088500E6F064 /* UITableView+Extensions.swift */; };
+		BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F32F1EB5088C00E6F064 /* CellType.swift */; };
+		BBF5F3321EB5088C00E6F064 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F3301EB5088C00E6F064 /* DataSource.swift */; };
+		BBF5F3371EB508C200E6F064 /* LocationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */; };
+		BBF5F3381EB508C200E6F064 /* LocationSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */; };
+		BBF5F33B1EB50B9800E6F064 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F33A1EB50B9800E6F064 /* States.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +29,19 @@
 		7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceApps001.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001.release.xcconfig"; sourceTree = "<group>"; };
 		A06F67561EB4D2D10043A2A6 /* SpaceApps001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApps001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A06F675B1EB4D2D10043A2A6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A06F675D1EB4D2D10043A2A6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A06F67601EB4D2D10043A2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A06F67621EB4D2D10043A2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06F67651EB4D2D10043A2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06F67671EB4D2D10043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0E0EF361EB4D718005D4534 /* 001.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 001.xml; sourceTree = "<group>"; };
+		BBF5F3241EB5063100E6F064 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		BBF5F3261EB5067A00E6F064 /* LocationSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationSelection.storyboard; sourceTree = "<group>"; };
+		BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductSelection.storyboard; sourceTree = "<group>"; };
+		BBF5F32B1EB5083300E6F064 /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
+		BBF5F32D1EB5088500E6F064 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		BBF5F32F1EB5088C00E6F064 /* CellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
+		BBF5F3301EB5088C00E6F064 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		BBF5F33A1EB50B9800E6F064 /* States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,14 +77,12 @@
 		A06F67581EB4D2D10043A2A6 /* SpaceApps001 */ = {
 			isa = PBXGroup;
 			children = (
-				A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */,
-				A0E0EF361EB4D718005D4534 /* 001.xml */,
-				A06F675B1EB4D2D10043A2A6 /* FirstViewController.swift */,
-				A06F675D1EB4D2D10043A2A6 /* SecondViewController.swift */,
-				A06F675F1EB4D2D10043A2A6 /* Main.storyboard */,
-				A06F67621EB4D2D10043A2A6 /* Assets.xcassets */,
-				A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */,
-				A06F67671EB4D2D10043A2A6 /* Info.plist */,
+				BBF5F3391EB50B8B00E6F064 /* Models */,
+				BBF5F3331EB508A200E6F064 /* TableView */,
+				BBF5F32A1EB507E900E6F064 /* LocationSelection */,
+				BBF5F3231EB5061000E6F064 /* Storyboards */,
+				BBF5F3221EB5060200E6F064 /* Application */,
+				BBF5F3211EB505F300E6F064 /* Support */,
 			);
 			path = SpaceApps001;
 			sourceTree = "<group>";
@@ -84,6 +94,70 @@
 				7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBF5F3211EB505F300E6F064 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A06F67621EB4D2D10043A2A6 /* Assets.xcassets */,
+				A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */,
+				A06F67671EB4D2D10043A2A6 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		BBF5F3221EB5060200E6F064 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		BBF5F3231EB5061000E6F064 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F3241EB5063100E6F064 /* Root.storyboard */,
+				BBF5F3261EB5067A00E6F064 /* LocationSelection.storyboard */,
+				BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BBF5F32A1EB507E900E6F064 /* LocationSelection */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F3341EB508AD00E6F064 /* Views */,
+				BBF5F32B1EB5083300E6F064 /* LocationSelectionViewController.swift */,
+			);
+			name = LocationSelection;
+			sourceTree = "<group>";
+		};
+		BBF5F3331EB508A200E6F064 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F32F1EB5088C00E6F064 /* CellType.swift */,
+				BBF5F3301EB5088C00E6F064 /* DataSource.swift */,
+				BBF5F32D1EB5088500E6F064 /* UITableView+Extensions.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		BBF5F3341EB508AD00E6F064 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */,
+				BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BBF5F3391EB50B8B00E6F064 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5F33A1EB50B9800E6F064 /* States.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		FB2A2B9C2FEE8B0AAD3A39B0 /* Frameworks */ = {
@@ -129,7 +203,7 @@
 				TargetAttributes = {
 					A06F67551EB4D2D00043A2A6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M724KW23Q3;
+						DevelopmentTeam = 44Q2J6374R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -157,10 +231,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBF5F3251EB5063100E6F064 /* Root.storyboard in Resources */,
 				A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */,
+				BBF5F3291EB5068900E6F064 /* ProductSelection.storyboard in Resources */,
+				BBF5F3381EB508C200E6F064 /* LocationSelectionTableViewCell.xib in Resources */,
+				BBF5F3271EB5067A00E6F064 /* LocationSelection.storyboard in Resources */,
 				A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */,
-				A06F67611EB4D2D10043A2A6 /* Main.storyboard in Resources */,
-				A0E0EF371EB4D718005D4534 /* 001.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,23 +295,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A06F675E1EB4D2D10043A2A6 /* SecondViewController.swift in Sources */,
+				BBF5F32E1EB5088500E6F064 /* UITableView+Extensions.swift in Sources */,
+				BBF5F32C1EB5083300E6F064 /* LocationSelectionViewController.swift in Sources */,
+				BBF5F33B1EB50B9800E6F064 /* States.swift in Sources */,
 				A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */,
-				A06F675C1EB4D2D10043A2A6 /* FirstViewController.swift in Sources */,
+				BBF5F3371EB508C200E6F064 /* LocationSelectionTableViewCell.swift in Sources */,
+				BBF5F3321EB5088C00E6F064 /* DataSource.swift in Sources */,
+				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A06F675F1EB4D2D10043A2A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A06F67601EB4D2D10043A2A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,8 +415,9 @@
 			baseConfigurationReference = 011647AD471DBB178AB2C5A8 /* Pods-SpaceApps001.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M724KW23Q3;
+				DEVELOPMENT_TEAM = 44Q2J6374R;
 				INFOPLIST_FILE = SpaceApps001/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neumayerb.SpaceApps001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,8 +430,9 @@
 			baseConfigurationReference = 7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M724KW23Q3;
+				DEVELOPMENT_TEAM = 44Q2J6374R;
 				INFOPLIST_FILE = SpaceApps001/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neumayerb.SpaceApps001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
