@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76D64CC917E5806C0F364252 /* Pods_SpaceApps001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58226331B839DBDFB9A70E26 /* Pods_SpaceApps001.framework */; };
 		A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */; };
 		A06F675C1EB4D2D10043A2A6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F675B1EB4D2D10043A2A6 /* FirstViewController.swift */; };
 		A06F675E1EB4D2D10043A2A6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F675D1EB4D2D10043A2A6 /* SecondViewController.swift */; };
 		A06F67611EB4D2D10043A2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06F675F1EB4D2D10043A2A6 /* Main.storyboard */; };
 		A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06F67621EB4D2D10043A2A6 /* Assets.xcassets */; };
 		A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */; };
+		A0E0EF371EB4D718005D4534 /* 001.xml in Resources */ = {isa = PBXBuildFile; fileRef = A0E0EF361EB4D718005D4534 /* 001.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011647AD471DBB178AB2C5A8 /* Pods-SpaceApps001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceApps001.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001.debug.xcconfig"; sourceTree = "<group>"; };
+		58226331B839DBDFB9A70E26 /* Pods_SpaceApps001.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceApps001.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceApps001.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001.release.xcconfig"; sourceTree = "<group>"; };
 		A06F67561EB4D2D10043A2A6 /* SpaceApps001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApps001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06F675B1EB4D2D10043A2A6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A06F67621EB4D2D10043A2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06F67651EB4D2D10043A2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06F67671EB4D2D10043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E0EF361EB4D718005D4534 /* 001.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 001.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D64CC917E5806C0F364252 /* Pods_SpaceApps001.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				A06F67581EB4D2D10043A2A6 /* SpaceApps001 */,
 				A06F67571EB4D2D10043A2A6 /* Products */,
+				B46948FAA154B3D93421E459 /* Pods */,
+				FB2A2B9C2FEE8B0AAD3A39B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */,
+				A0E0EF361EB4D718005D4534 /* 001.xml */,
 				A06F675B1EB4D2D10043A2A6 /* FirstViewController.swift */,
 				A06F675D1EB4D2D10043A2A6 /* SecondViewController.swift */,
 				A06F675F1EB4D2D10043A2A6 /* Main.storyboard */,
@@ -67,6 +77,23 @@
 			path = SpaceApps001;
 			sourceTree = "<group>";
 		};
+		B46948FAA154B3D93421E459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				011647AD471DBB178AB2C5A8 /* Pods-SpaceApps001.debug.xcconfig */,
+				7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB2A2B9C2FEE8B0AAD3A39B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58226331B839DBDFB9A70E26 /* Pods_SpaceApps001.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06F676A1EB4D2D10043A2A6 /* Build configuration list for PBXNativeTarget "SpaceApps001" */;
 			buildPhases = (
+				6951AB89F097EA23969BEDD5 /* [CP] Check Pods Manifest.lock */,
 				A06F67521EB4D2D00043A2A6 /* Sources */,
 				A06F67531EB4D2D00043A2A6 /* Frameworks */,
 				A06F67541EB4D2D00043A2A6 /* Resources */,
+				E4D009B1EE06E6BB37D3CDFE /* [CP] Embed Pods Frameworks */,
+				694F3B704944C304122BF617 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,10 +160,59 @@
 				A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */,
 				A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */,
 				A06F67611EB4D2D10043A2A6 /* Main.storyboard in Resources */,
+				A0E0EF371EB4D718005D4534 /* 001.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		694F3B704944C304122BF617 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6951AB89F097EA23969BEDD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D009B1EE06E6BB37D3CDFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A06F67521EB4D2D00043A2A6 /* Sources */ = {
@@ -261,6 +340,7 @@
 		};
 		A06F676B1EB4D2D10043A2A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011647AD471DBB178AB2C5A8 /* Pods-SpaceApps001.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M724KW23Q3;
@@ -274,6 +354,7 @@
 		};
 		A06F676C1EB4D2D10043A2A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M724KW23Q3;
@@ -304,6 +385,7 @@
 				A06F676C1EB4D2D10043A2A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
