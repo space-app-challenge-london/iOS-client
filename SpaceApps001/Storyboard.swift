@@ -11,6 +11,7 @@ import UIKit
 struct Storyboard {
     static let location = UIStoryboard(name: "LocationSelection", bundle: nil)
     static let product = UIStoryboard(name: "ProductSelection", bundle: nil)
+    static let productStages = UIStoryboard(name: "ProductStages", bundle: nil)
 }
 
 extension UIViewController {

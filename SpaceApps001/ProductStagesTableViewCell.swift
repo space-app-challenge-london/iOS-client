@@ -36,7 +36,7 @@ class ProductStagesTableViewCell: UITableViewCell, CellType {
         self.transportationLabel.text = String.init(format: "%.2f", model.transportation!)
         self.lossInWeightLabel.text = String.init(format: "%.2f", model.lossInWeight!)
         self.wastageLabel.text = String.init(format: "%.2f", model.wastage!)
-        self.no2Label.text = String.init(format: "%.2f", model.no2Emission!)
+//        self.no2Label.text = String.init(format: "%.2f", model.no2Emission!)
     }
     
 }

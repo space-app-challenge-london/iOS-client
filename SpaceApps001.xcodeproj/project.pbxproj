@@ -101,12 +101,31 @@
 				BBF5F33C1EB516A400E6F064 /* ProductSelection */,
 				BBF5F3391EB50B8B00E6F064 /* Models */,
 				BBF5F3331EB508A200E6F064 /* TableView */,
+				A09897B41EB538E3001B06DD /* ProductStages */,
 				BBF5F32A1EB507E900E6F064 /* LocationSelection */,
 				BBF5F3231EB5061000E6F064 /* Storyboards */,
 				BBF5F3221EB5060200E6F064 /* Application */,
 				BBF5F3211EB505F300E6F064 /* Support */,
 			);
 			path = SpaceApps001;
+			sourceTree = "<group>";
+		};
+		A09897B41EB538E3001B06DD /* ProductStages */ = {
+			isa = PBXGroup;
+			children = (
+				A09897B51EB538F8001B06DD /* Views */,
+				A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */,
+			);
+			name = ProductStages;
+			sourceTree = "<group>";
+		};
+		A09897B51EB538F8001B06DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A09897AC1EB521B7001B06DD /* ProductStagesTableViewCell.swift */,
+				A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		B46948FAA154B3D93421E459 /* Pods */ = {
@@ -161,7 +180,6 @@
 			children = (
 				BBF5F3341EB508AD00E6F064 /* Views */,
 				BBF5F32B1EB5083300E6F064 /* LocationSelectionViewController.swift */,
-				A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */,
 			);
 			name = LocationSelection;
 			sourceTree = "<group>";
@@ -181,8 +199,6 @@
 			children = (
 				BBF5F3351EB508C200E6F064 /* LocationSelectionTableViewCell.swift */,
 				BBF5F3361EB508C200E6F064 /* LocationSelectionTableViewCell.xib */,
-				A09897AC1EB521B7001B06DD /* ProductStagesTableViewCell.swift */,
-				A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Product Stages View Controller-->
         <scene sceneID="UGH-Re-D1k">
             <objects>
-                <viewController id="hgJ-uX-YEe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductStagesViewController" id="hgJ-uX-YEe" customClass="ProductStagesViewController" customModule="SpaceApps001" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPp-RQ-gwe"/>
                         <viewControllerLayoutGuide type="bottom" id="KBl-WK-D0s"/>
@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-1C-hJ9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-1C-hJ9">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -33,6 +33,9 @@
                             <constraint firstItem="g6h-1C-hJ9" firstAttribute="leading" secondItem="c3Y-su-lzx" secondAttribute="leading" id="YhG-Ht-Jx7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="g6h-1C-hJ9" id="5GU-gQ-0wF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGD-oj-sdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
