@@ -27,7 +27,7 @@ class ProductSelectionViewController: UIViewController {
                                                                                         return ProductOverviewViewController()
                                 }
                                 
-                                productSelection.foodForOverview = DataFood(rawValue: context.title)/
+                                productSelection.foodForOverview = DataFood(rawValue: context.title)
                                 return productSelection
         }).asObserver()
     }

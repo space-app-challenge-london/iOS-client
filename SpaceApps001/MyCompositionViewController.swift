@@ -32,17 +32,17 @@ class MyCompositionViewController: UIViewController {
                                                                                       identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
                                                                                         return ProductStagesViewController()
                                 }
+
                                 productSelection.datasFood = context.products.map {
                                     return DataFood(rawValue: $0.title)!
                                 }
-
                                 return productSelection
         }).asObserver()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "My recipies"
+        title = "My recipes"
 
         listview.modelSelect.bindTo(productOverviewSegue).addDisposableTo(bag)
         
