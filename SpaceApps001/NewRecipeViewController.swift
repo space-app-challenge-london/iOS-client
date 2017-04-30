@@ -9,6 +9,7 @@
 import UIKit
 import Cartography
 import RxSwift
+import RxSegue
 import RealmSwift
 
 class NewRecipeViewController: UIViewController {
@@ -22,7 +23,7 @@ class NewRecipeViewController: UIViewController {
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textfieldName.becomeFirstResponder()
@@ -71,6 +72,8 @@ class NewRecipeViewController: UIViewController {
             self?.listview.reloadData()
             self?.updateUI()
         }).addDisposableTo(bag)
+        
+        
     }
 }
 

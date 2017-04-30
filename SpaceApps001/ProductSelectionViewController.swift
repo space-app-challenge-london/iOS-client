@@ -18,18 +18,6 @@ class ProductSelectionViewController: UIViewController {
 
     private let bag = DisposeBag()
     private let listview = ListView<ProductTableViewCell, Product>(datas: Product.fake())
-
-//    private var productStagesSegue: AnyObserver<Product> {
-//        return NavigationSegue(fromViewController: self.navigationController!,
-//                               toViewControllerFactory: { (sender, context) -> ProductStagesViewController in
-//                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productStages,
-//                                                                                      identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
-//                                                                                        return ProductStagesViewController()
-//                                }
-//                                productSelection.product = context
-//                                return productSelection
-//        }).asObserver()
-//    }
     
     private var productStagesSegue: AnyObserver<Product> {
         return NavigationSegue(fromViewController: self.navigationController!,
@@ -39,6 +27,7 @@ class ProductSelectionViewController: UIViewController {
                                                                                         return ProductOverviewViewController()
                                 }
                                 
+                                productSelection.headerImage = #imageLiteral(resourceName: "Cheese")
                                 return productSelection
         }).asObserver()
     }
