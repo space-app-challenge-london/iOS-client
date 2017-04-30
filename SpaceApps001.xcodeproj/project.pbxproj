@@ -16,6 +16,13 @@
 		A09897AF1EB521B7001B06DD /* ProductStagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */; };
 		A09897B11EB521CE001B06DD /* ProductStagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */; };
 		A09897B31EB521DF001B06DD /* ProcessStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09897B21EB521DF001B06DD /* ProcessStage.swift */; };
+		BB7306F01EB58B6E002FAB85 /* CompositionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306EE1EB58B6E002FAB85 /* CompositionTableViewCell.swift */; };
+		BB7306F11EB58B6E002FAB85 /* CompositionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7306EF1EB58B6E002FAB85 /* CompositionTableViewCell.xib */; };
+		BB7306F41EB58D44002FAB85 /* ProductOverview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7306F21EB58D44002FAB85 /* ProductOverview.storyboard */; };
+		BB7306F51EB58D44002FAB85 /* ProductOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306F31EB58D44002FAB85 /* ProductOverviewViewController.swift */; };
+		BB7306F81EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306F61EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift */; };
+		BB7306F91EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7306F71EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib */; };
+		BB7306FB1EB58D80002FAB85 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */; };
 		BB9423F41EB52EEA00E81E79 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9423F21EB52EEA00E81E79 /* ProductTableViewCell.swift */; };
 		BB9423F51EB52EEA00E81E79 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9423F31EB52EEA00E81E79 /* ProductTableViewCell.xib */; };
 		BB9423F71EB52EFB00E81E79 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9423F61EB52EFB00E81E79 /* Product.swift */; };
@@ -51,6 +58,13 @@
 		A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductStagesTableViewCell.xib; sourceTree = "<group>"; };
 		A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductStagesViewController.swift; sourceTree = "<group>"; };
 		A09897B21EB521DF001B06DD /* ProcessStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessStage.swift; sourceTree = "<group>"; };
+		BB7306EE1EB58B6E002FAB85 /* CompositionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionTableViewCell.swift; sourceTree = "<group>"; };
+		BB7306EF1EB58B6E002FAB85 /* CompositionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompositionTableViewCell.xib; sourceTree = "<group>"; };
+		BB7306F21EB58D44002FAB85 /* ProductOverview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductOverview.storyboard; sourceTree = "<group>"; };
+		BB7306F31EB58D44002FAB85 /* ProductOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductOverviewViewController.swift; sourceTree = "<group>"; };
+		BB7306F61EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductStagesHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		BB7306F71EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductStagesHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		BB9423F21EB52EEA00E81E79 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		BB9423F31EB52EEA00E81E79 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		BB9423F61EB52EFB00E81E79 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -122,6 +136,8 @@
 		A09897B41EB538E3001B06DD /* ProductStages */ = {
 			isa = PBXGroup;
 			children = (
+				BB7306F21EB58D44002FAB85 /* ProductOverview.storyboard */,
+				BB7306F31EB58D44002FAB85 /* ProductOverviewViewController.swift */,
 				A09897B51EB538F8001B06DD /* Views */,
 				A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */,
 			);
@@ -131,6 +147,8 @@
 		A09897B51EB538F8001B06DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB7306F61EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift */,
+				BB7306F71EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib */,
 				A09897AC1EB521B7001B06DD /* ProductStagesTableViewCell.swift */,
 				A09897AD1EB521B7001B06DD /* ProductStagesTableViewCell.xib */,
 			);
@@ -158,6 +176,7 @@
 		BB9423F81EB53F0600E81E79 /* Comon */ = {
 			isa = PBXGroup;
 			children = (
+				BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */,
 				BB9423F91EB53F1900E81E79 /* ListView.swift */,
 			);
 			name = Comon;
@@ -180,6 +199,8 @@
 			children = (
 				BBD0D9181EB56EDD00D3A613 /* ProductSelectionTableViewCell.swift */,
 				BBD0D9191EB56EDD00D3A613 /* ProductSelectionTableViewCell.xib */,
+				BB7306EE1EB58B6E002FAB85 /* CompositionTableViewCell.swift */,
+				BB7306EF1EB58B6E002FAB85 /* CompositionTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -324,7 +345,10 @@
 				BBF5F3251EB5063100E6F064 /* Root.storyboard in Resources */,
 				BBA280591EB5519500A91514 /* MyComposition.storyboard in Resources */,
 				A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */,
+				BB7306F41EB58D44002FAB85 /* ProductOverview.storyboard in Resources */,
 				A09897AF1EB521B7001B06DD /* ProductStagesTableViewCell.xib in Resources */,
+				BB7306F91EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib in Resources */,
+				BB7306F11EB58B6E002FAB85 /* CompositionTableViewCell.xib in Resources */,
 				BBF5F3291EB5068900E6F064 /* ProductSelection.storyboard in Resources */,
 				BBD0D91B1EB56EDD00D3A613 /* ProductSelectionTableViewCell.xib in Resources */,
 				A09897AB1EB521A8001B06DD /* ProductStages.storyboard in Resources */,
@@ -388,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7306FB1EB58D80002FAB85 /* UIViewExtensions.swift in Sources */,
 				BBF5F32E1EB5088500E6F064 /* UITableView+Extensions.swift in Sources */,
 				BBF5F33B1EB50B9800E6F064 /* States.swift in Sources */,
 				A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */,
@@ -401,9 +426,12 @@
 				A09897B11EB521CE001B06DD /* ProductStagesViewController.swift in Sources */,
 				BBF5F3411EB5187D00E6F064 /* Storyboard.swift in Sources */,
 				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,
+				BB7306F81EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift in Sources */,
+				BB7306F01EB58B6E002FAB85 /* CompositionTableViewCell.swift in Sources */,
 				BB9423F71EB52EFB00E81E79 /* Product.swift in Sources */,
 				BB9423FA1EB53F1900E81E79 /* ListView.swift in Sources */,
 				BBD0D91D1EB57DCD00D3A613 /* Recipe.swift in Sources */,
+				BB7306F51EB58D44002FAB85 /* ProductOverviewViewController.swift in Sources */,
 				BBD0D91A1EB56EDD00D3A613 /* ProductSelectionTableViewCell.swift in Sources */,
 				BBD0D9141EB5654600D3A613 /* NewRecipeViewController.swift in Sources */,
 			);
