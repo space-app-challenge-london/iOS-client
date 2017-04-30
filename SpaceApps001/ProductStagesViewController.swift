@@ -66,7 +66,7 @@ class ProductStagesViewController: UIViewController {
         
             for a in 0 ... stagesTitles.count - 1{
                 
-                let newStage = ProcessStage(title: stagesTitles[a], weight: 0.0, lossInWeight: 0.0, transportation: 0.0, wastage: 0.0)
+                let newStage = ProcessStage(title: stagesTitles[a], weight: 0.0, waterUsage: 0.0, carbonFootprint: 0.0, wastage: 0.0)
                 
                 self.stages!.append(newStage)
             }

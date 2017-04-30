@@ -20,16 +20,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-1C-hJ9">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-1C-hJ9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="g6h-1C-hJ9" secondAttribute="trailing" id="AsK-Ph-pnI"/>
-                            <constraint firstItem="g6h-1C-hJ9" firstAttribute="top" secondItem="hPp-RQ-gwe" secondAttribute="bottom" id="F58-7i-rHu"/>
                             <constraint firstItem="KBl-WK-D0s" firstAttribute="top" secondItem="g6h-1C-hJ9" secondAttribute="bottom" id="SSi-Qj-c9T"/>
+                            <constraint firstItem="g6h-1C-hJ9" firstAttribute="top" secondItem="c3Y-su-lzx" secondAttribute="top" id="XBM-sc-imR"/>
                             <constraint firstItem="g6h-1C-hJ9" firstAttribute="leading" secondItem="c3Y-su-lzx" secondAttribute="leading" id="YhG-Ht-Jx7"/>
                         </constraints>
                     </view>
