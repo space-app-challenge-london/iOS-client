@@ -17,7 +17,8 @@ class ProductStagesViewController: UIViewController {
     
     private var dataSource: DataSource<ProductStagesTableViewCell, ProcessStage>!
 
-    var product: Product?
+    var datasFood = [DataFood]()
+
     private var stages: [ProcessStage]?
     
     override func viewDidLoad() {
@@ -49,31 +50,9 @@ class ProductStagesViewController: UIViewController {
         dataSource = DataSource<ProductStagesTableViewCell, ProcessStage>(tableview: tableview, datas: stages!)
     }
     
-    
-    
-    func createStages(){
-        
-
-        let stagesTitles = ["Feed",
-                            "Farm",
-                            "Processing",
-                            "Packaging",
-                            "Retail",
-                            "Consumer",
-                            "End of Life"]
-        
-        self.stages = [ProcessStage]()
-        
-        
-        if self.stages != nil{
-        
-            for a in 0 ... stagesTitles.count - 1{
-                
-                let newStage = ProcessStage(title: stagesTitles[a], weight: 0.0, waterUsage: 0.0, carbonFootprint: 0.0, wastage: 0.0)
-                
-                self.stages!.append(newStage)
-            }
-        }
-        
+    func createStages() {
+        stages = datasFood.map({
+            return ProcessStage(title: $0.rawValue, weight: 1, waterUsage: $0.waterUsage, carbonFootprint: $0.carbonFootprint, wastage: $0.foodWastage)
+        })
     }
 }

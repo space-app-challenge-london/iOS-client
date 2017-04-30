@@ -23,6 +23,7 @@
 		BB7306F81EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306F61EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift */; };
 		BB7306F91EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7306F71EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib */; };
 		BB7306FB1EB58D80002FAB85 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */; };
+		BB7306FD1EB5A277002FAB85 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7306FC1EB5A277002FAB85 /* Data.swift */; };
 		BB9423F41EB52EEA00E81E79 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9423F21EB52EEA00E81E79 /* ProductTableViewCell.swift */; };
 		BB9423F51EB52EEA00E81E79 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9423F31EB52EEA00E81E79 /* ProductTableViewCell.xib */; };
 		BB9423F71EB52EFB00E81E79 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9423F61EB52EFB00E81E79 /* Product.swift */; };
@@ -65,6 +66,7 @@
 		BB7306F61EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductStagesHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		BB7306F71EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductStagesHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BB7306FC1EB5A277002FAB85 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		BB9423F21EB52EEA00E81E79 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		BB9423F31EB52EEA00E81E79 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		BB9423F61EB52EFB00E81E79 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */,
 				BB9423F91EB53F1900E81E79 /* ListView.swift */,
+				BB7306FC1EB5A277002FAB85 /* Data.swift */,
 			);
 			name = Comon;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				BBF5F3321EB5088C00E6F064 /* DataSource.swift in Sources */,
 				A09897B11EB521CE001B06DD /* ProductStagesViewController.swift in Sources */,
 				BBF5F3411EB5187D00E6F064 /* Storyboard.swift in Sources */,
+				BB7306FD1EB5A277002FAB85 /* Data.swift in Sources */,
 				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,
 				BB7306F81EB58D53002FAB85 /* ProductStagesHeaderTableViewCell.swift in Sources */,
 				BB7306F01EB58B6E002FAB85 /* CompositionTableViewCell.swift in Sources */,
