@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76D64CC917E5806C0F364252 /* Pods_SpaceApps001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58226331B839DBDFB9A70E26 /* Pods_SpaceApps001.framework */; };
+		A0280CBB1EB5CB820055307B /* StagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0280CBA1EB5CB820055307B /* StagesData.swift */; };
 		A06F675A1EB4D2D10043A2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */; };
 		A06F67631EB4D2D10043A2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06F67621EB4D2D10043A2A6 /* Assets.xcassets */; };
 		A06F67661EB4D2D10043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06F67641EB4D2D10043A2A6 /* LaunchScreen.storyboard */; };
@@ -47,6 +48,7 @@
 		011647AD471DBB178AB2C5A8 /* Pods-SpaceApps001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceApps001.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001.debug.xcconfig"; sourceTree = "<group>"; };
 		58226331B839DBDFB9A70E26 /* Pods_SpaceApps001.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceApps001.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceApps001.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceApps001/Pods-SpaceApps001.release.xcconfig"; sourceTree = "<group>"; };
+		A0280CBA1EB5CB820055307B /* StagesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesData.swift; sourceTree = "<group>"; };
 		A06F67561EB4D2D10043A2A6 /* SpaceApps001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApps001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06F67591EB4D2D10043A2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06F67621EB4D2D10043A2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				BB7306FA1EB58D80002FAB85 /* UIViewExtensions.swift */,
 				BB9423F91EB53F1900E81E79 /* ListView.swift */,
 				BB7306FC1EB5A277002FAB85 /* Data.swift */,
+				A0280CBA1EB5CB820055307B /* StagesData.swift */,
 			);
 			name = Comon;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				BBD0D9161EB56C2C00D3A613 /* ProductSelection.swift in Sources */,
 				BBF5F3321EB5088C00E6F064 /* DataSource.swift in Sources */,
 				A09897B11EB521CE001B06DD /* ProductStagesViewController.swift in Sources */,
+				A0280CBB1EB5CB820055307B /* StagesData.swift in Sources */,
 				BBF5F3411EB5187D00E6F064 /* Storyboard.swift in Sources */,
 				BB7306FD1EB5A277002FAB85 /* Data.swift in Sources */,
 				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,

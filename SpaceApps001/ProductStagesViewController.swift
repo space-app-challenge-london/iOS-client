@@ -18,6 +18,7 @@ class ProductStagesViewController: UIViewController {
     private var dataSource: DataSource<ProductStagesTableViewCell, ProcessStage>!
 
     var datasFood = [DataFood]()
+    var dataStages = [DataStages]()
 
     private var stages: [ProcessStage]?
     
@@ -50,9 +51,20 @@ class ProductStagesViewController: UIViewController {
     }
     
     func createStages() {
-        stages = datasFood.map({
-            return ProcessStage(title: $0.rawValue, weight: 1, waterUsage: $0.waterUsage, carbonFootprint: $0.carbonFootprint, wastage: $0.foodWastage)
-        })
+        if self.dataStages.isEmpty{
+        
+            stages = datasFood.map({
+                
+                return ProcessStage(title: $0.rawValue, weight: 1, waterUsage: $0.waterUsage, carbonFootprint: $0.carbonFootprint, wastage: $0.foodWastage)
+            })
+        }else{
+            
+            stages = dataStages.map({
+                
+                return ProcessStage(title: $0.rawValue, weight: 1, waterUsage: $0.waterUsage, carbonFootprint: $0.carbonFootprint, wastage: $0.foodWastage)
+            })
+        }
+        
     }
     
     

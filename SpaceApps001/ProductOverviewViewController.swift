@@ -25,6 +25,7 @@ class ProductOverviewViewController: UIViewController {
     
     private let bag = DisposeBag()
     var headerImage: UIImage?
+    var dataForFood = [DataStages]()
     
     
     private var showStagesSegue: AnyObserver<Void> {
@@ -34,6 +35,8 @@ class ProductOverviewViewController: UIViewController {
                                                                                       identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
                                                                                         return ProductStagesViewController()
                                 }
+                                
+                                productSelection.dataStages = DataStages.all()
                                 
                                 return productSelection
         }).asObserver()
@@ -95,6 +98,9 @@ class ProductOverviewViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
     
     
 
