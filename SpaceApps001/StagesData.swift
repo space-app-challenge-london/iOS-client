@@ -48,7 +48,7 @@ extension DataStages {
     var foodWastage: Double {
         switch self {
         case .Feed:
-            return 0.1
+            return 10.0
         case .Farm:
             return 0.0
         case .Processing:
@@ -56,13 +56,13 @@ extension DataStages {
         case .Packaging:
             return 0.0
         case .Retail:
-            return 0.06
+            return 6.0
         case .Consumer:
-            return 0.13
+            return 13.0
         case .EndOfLife:
             return 0.0
         case .Total:
-            return 0.29
+            return 29.0
         }
     }
     

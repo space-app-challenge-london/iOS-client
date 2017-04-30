@@ -11,7 +11,6 @@ import UIKit
 class ProductStagesTableViewCell: UITableViewCell, CellType {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var transportationLabel: UILabel!
     @IBOutlet weak var lossInWeightLabel: UILabel!
     @IBOutlet weak var wastageLabel: UILabel!
@@ -26,10 +25,9 @@ class ProductStagesTableViewCell: UITableViewCell, CellType {
     
     func configure(model: ProcessStage) {
         self.titleLabel.text = model.title
-        self.weightLabel.text = String.init(format: "%.2f", model.weight!)
-        self.transportationLabel.text = String.init(format: "%.2f", model.carbonFootprint!)
-        self.lossInWeightLabel.text = String.init(format: "%.2f", model.waterUsage!)
-        self.wastageLabel.text = String.init(format: "%.2f", model.wastage!)
+        self.transportationLabel.text = "\(String.init(format: "%.2f", model.carbonFootprint!)) kg"
+        self.lossInWeightLabel.text = "\(String.init(format: "%.2f", model.waterUsage!)) L"
+        self.wastageLabel.text = "\(String.init(format: "%.1f", model.wastage!)) %"
     }
     
 }
