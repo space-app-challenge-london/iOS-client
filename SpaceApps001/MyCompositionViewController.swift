@@ -27,13 +27,15 @@ class MyCompositionViewController: UIViewController {
     
     private var productOverviewSegue: AnyObserver<Recipe> {
         return NavigationSegue(fromViewController: self.navigationController!,
-                               toViewControllerFactory: { (sender, context) -> ProductOverviewViewController in
-                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productOverview,
-                                                                                      identifier: ProductOverviewViewController.identifier) as? ProductOverviewViewController else {
-                                                                                        return ProductOverviewViewController()
+                               toViewControllerFactory: { (sender, context) -> ProductStagesViewController in
+                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productStages,
+                                                                                      identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
+                                                                                        return ProductStagesViewController()
                                 }
-                                
-                                productSelection.headerImage = #imageLiteral(resourceName: "Cheese")
+                                productSelection.datasFood = context.products.map {
+                                    return DataFood(rawValue: $0.title)!
+                                }
+
                                 return productSelection
         }).asObserver()
     }
@@ -42,9 +44,7 @@ class MyCompositionViewController: UIViewController {
         super.viewDidLoad()
         title = "My recipies"
 
-
         listview.modelSelect.bindTo(productOverviewSegue).addDisposableTo(bag)
-        
         
         token = (try! Realm()).addNotificationBlock { [weak self] _, _ in
             self?.listview.source.datas = Recipe.all()
