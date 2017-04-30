@@ -65,17 +65,17 @@ class ProductOverviewViewController: UIViewController {
         
         if emissionValue != CGFloat(0){
             
-            emissionRelativity = 100 / emissionValue
+            emissionRelativity = 40 / emissionValue
         }
         
         if waterValue != CGFloat(0){
             
-            waterRelativity = 100 / waterValue
+            waterRelativity = 17196 / waterValue
         }
         
         if wastageValue != CGFloat(0){
             
-            wastageRelativity = 100 / wastageValue
+            wastageRelativity = 30 / wastageValue
         }
         
         
