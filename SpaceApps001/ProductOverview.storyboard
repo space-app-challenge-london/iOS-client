@@ -89,14 +89,14 @@
                                                                                                         <subviews>
                                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7G-8p-BwC">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
-                                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                                 <constraints>
                                                                                                                     <constraint firstAttribute="width" constant="10" id="qB4-6l-dr2"/>
                                                                                                                 </constraints>
                                                                                                             </view>
                                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSA-xm-bzf">
                                                                                                                 <rect key="frame" x="10" y="0.0" width="255" height="10"/>
-                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                             </view>
                                                                                                         </subviews>
                                                                                                     </stackView>
@@ -163,14 +163,14 @@
                                                                                                         <subviews>
                                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZG-pP-Xo2">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
-                                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                                 <constraints>
                                                                                                                     <constraint firstAttribute="width" constant="10" id="WQt-75-ySW"/>
                                                                                                                 </constraints>
                                                                                                             </view>
                                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h83-ZU-AtY">
                                                                                                                 <rect key="frame" x="10" y="0.0" width="255" height="10"/>
-                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                             </view>
                                                                                                         </subviews>
                                                                                                     </stackView>
@@ -237,14 +237,14 @@
                                                                                                         <subviews>
                                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kg-UX-Zne">
                                                                                                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
-                                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                                 <constraints>
                                                                                                                     <constraint firstAttribute="width" constant="10" id="JrJ-N1-qy2"/>
                                                                                                                 </constraints>
                                                                                                             </view>
                                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKo-NQ-D4d">
                                                                                                                 <rect key="frame" x="10" y="0.0" width="255" height="10"/>
-                                                                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                                                             </view>
                                                                                                         </subviews>
                                                                                                     </stackView>
@@ -333,10 +333,13 @@
                     </view>
                     <connections>
                         <outlet property="emissionBarContainer" destination="2IW-mE-8tg" id="Hfc-rL-dsR"/>
+                        <outlet property="emissionBarWidthConstraint" destination="qB4-6l-dr2" id="IWg-MZ-atE"/>
                         <outlet property="headerImageView" destination="Tj6-wl-l7t" id="Juq-gd-nrx"/>
                         <outlet property="stagesButton" destination="h7Y-9p-nLt" id="esO-GS-Udn"/>
                         <outlet property="wastageBarController" destination="Lek-EJ-lQM" id="PnN-3f-nfk"/>
+                        <outlet property="wastageBarWidthConstraint" destination="JrJ-N1-qy2" id="vcg-Dm-cPD"/>
                         <outlet property="waterBarContainer" destination="6tG-5w-5eW" id="GNC-Hv-3Do"/>
+                        <outlet property="waterBarWidthConstraint" destination="WQt-75-ySW" id="F9A-n1-7CQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olH-3Y-4MA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -346,7 +349,7 @@
     </scenes>
     <resources>
         <image name="CO2" width="76" height="76"/>
-        <image name="Cheese" width="80" height="80"/>
+        <image name="Cheese" width="40" height="40"/>
         <image name="Wastage" width="76" height="76"/>
         <image name="Water" width="72" height="72"/>
     </resources>

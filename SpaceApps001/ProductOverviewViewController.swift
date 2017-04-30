@@ -19,6 +19,9 @@ class ProductOverviewViewController: UIViewController {
     @IBOutlet weak var emissionBarContainer: UIView!
     @IBOutlet weak var stagesButton: UIButton!
     @IBOutlet weak var headerImageView: UIImageView!
+    @IBOutlet weak var emissionBarWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var waterBarWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var wastageBarWidthConstraint: NSLayoutConstraint!
     
     private let bag = DisposeBag()
     var headerImage: UIImage?
@@ -44,6 +47,40 @@ class ProductOverviewViewController: UIViewController {
         self.emissionBarContainer.setCorners()
         self.wastageBarController.setCorners()
         self.waterBarContainer.setCorners()
+        
+        let totalBarWidth:CGFloat = self.waterBarContainer.bounds.width
+        
+        let emissionValue: CGFloat = 27
+        let waterValue: CGFloat = 5.53
+        let wastageValue: CGFloat = 0
+        
+        
+        let emissionRelativity: CGFloat = 100 / emissionValue
+        let waterRelativity = 100 / waterValue
+        let wastageRelativity = 100 / wastageValue
+        
+        if emissionValue != CGFloat(0){
+            
+            emissionBarWidthConstraint.constant = totalBarWidth / emissionRelativity
+        }else{
+            emissionBarWidthConstraint.constant = 0.0
+        }
+        
+        if waterValue != CGFloat(0){
+            
+            waterBarWidthConstraint.constant = totalBarWidth / waterRelativity
+        }else{
+            waterBarWidthConstraint.constant = 0.0
+        }
+        
+        if wastageValue != CGFloat(0){
+            
+            wastageBarWidthConstraint.constant = totalBarWidth / wastageRelativity
+        }else{
+            
+            wastageBarWidthConstraint.constant = 0.0
+        }
+        
         
         if self.headerImage != nil{
             

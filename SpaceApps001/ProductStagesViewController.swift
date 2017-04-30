@@ -54,4 +54,7 @@ class ProductStagesViewController: UIViewController {
             return ProcessStage(title: $0.rawValue, weight: 1, waterUsage: $0.waterUsage, carbonFootprint: $0.carbonFootprint, wastage: $0.foodWastage)
         })
     }
+    
+    
+    
 }

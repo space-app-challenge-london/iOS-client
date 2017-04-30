@@ -134,7 +134,6 @@
 		A09897B41EB538E3001B06DD /* ProductStages */ = {
 			isa = PBXGroup;
 			children = (
-				BB7306F21EB58D44002FAB85 /* ProductOverview.storyboard */,
 				BB7306F31EB58D44002FAB85 /* ProductOverviewViewController.swift */,
 				A09897B51EB538F8001B06DD /* Views */,
 				A09897B01EB521CE001B06DD /* ProductStagesViewController.swift */,
@@ -226,6 +225,7 @@
 				BBF5F3241EB5063100E6F064 /* Root.storyboard */,
 				BBA280581EB5519500A91514 /* MyComposition.storyboard */,
 				BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */,
+				BB7306F21EB58D44002FAB85 /* ProductOverview.storyboard */,
 				A09897AA1EB521A8001B06DD /* ProductStages.storyboard */,
 			);
 			name = Storyboards;
