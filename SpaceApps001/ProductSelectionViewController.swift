@@ -17,7 +17,7 @@ class ProductSelectionViewController: UIViewController {
     var state: String?
 
     private let bag = DisposeBag()
-    private let listview = ListView<ProductTableViewCell, Product>(datas: Product.fake())
+    private let listview = ListView<ProductTableViewCell, Product>(datas: Product.all())
     
     private var productStagesSegue: AnyObserver<Product> {
         return NavigationSegue(fromViewController: self.navigationController!,
@@ -27,7 +27,7 @@ class ProductSelectionViewController: UIViewController {
                                                                                         return ProductOverviewViewController()
                                 }
                                 
-                                productSelection.foodForOverview = DataFood.Cabbage//.headerImage = #imageLiteral(resourceName: "Cheese")
+                                productSelection.foodForOverview = DataFood(rawValue: context.title)/
                                 return productSelection
         }).asObserver()
     }
@@ -41,6 +41,7 @@ class ProductSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = state
+
         view.addSubview(listview)
         constrain(listview, view) { listview, view in
             listview.edges == view.edges
