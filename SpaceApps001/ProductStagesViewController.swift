@@ -21,8 +21,10 @@ class ProductStagesViewController: UIViewController {
     private var stages: [ProcessStage]?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         title = "Stages"
+        
         configureTableview()
         
         tableview.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
@@ -38,12 +40,12 @@ class ProductStagesViewController: UIViewController {
     }
     
     private func configureTableview() {
+        
         tableview.registerCell(identifier: ProductStagesTableViewCell.identifier)
+        tableview.registerCell(identifier: ProductStagesHeaderTableViewCell.identifier)
         tableview.tableFooterView = UIView()
         self.createStages()
-        if stages == nil{
-            print("stages are nil")
-        }
+        
         dataSource = DataSource<ProductStagesTableViewCell, ProcessStage>(tableview: tableview, datas: stages!)
     }
     
@@ -51,12 +53,13 @@ class ProductStagesViewController: UIViewController {
     
     func createStages(){
         
-        
+
         let stagesTitles = ["Feed",
                             "Farm",
                             "Processing",
                             "Packaging",
                             "Retail",
+                            "Consumer",
                             "End of Life"]
         
         self.stages = [ProcessStage]()

@@ -19,14 +19,26 @@ class ProductSelectionViewController: UIViewController {
     private let bag = DisposeBag()
     private let listview = ListView<ProductTableViewCell, Product>(datas: Product.fake())
 
+//    private var productStagesSegue: AnyObserver<Product> {
+//        return NavigationSegue(fromViewController: self.navigationController!,
+//                               toViewControllerFactory: { (sender, context) -> ProductStagesViewController in
+//                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productStages,
+//                                                                                      identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
+//                                                                                        return ProductStagesViewController()
+//                                }
+//                                productSelection.product = context
+//                                return productSelection
+//        }).asObserver()
+//    }
+    
     private var productStagesSegue: AnyObserver<Product> {
         return NavigationSegue(fromViewController: self.navigationController!,
-                               toViewControllerFactory: { (sender, context) -> ProductStagesViewController in
-                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productStages,
-                                                                                      identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
-                                                                                        return ProductStagesViewController()
+                               toViewControllerFactory: { (sender, context) -> ProductOverviewViewController in
+                                guard let productSelection = UIStoryboard.instanciate(storyboard: Storyboard.productOverview,
+                                                                                      identifier: ProductOverviewViewController.identifier) as? ProductOverviewViewController else {
+                                                                                        return ProductOverviewViewController()
                                 }
-                                productSelection.product = context
+                                
                                 return productSelection
         }).asObserver()
     }
@@ -46,4 +58,5 @@ class ProductSelectionViewController: UIViewController {
         }
         listview.modelSelect.bindTo(productStagesSegue).addDisposableTo(bag)
     }
+    
 }
