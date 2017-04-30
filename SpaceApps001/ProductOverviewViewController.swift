@@ -27,6 +27,8 @@ class ProductOverviewViewController: UIViewController {
     var headerImage: UIImage?
     var dataForFood = [DataStages]()
     
+    var foodForOverview = DataFood.Cheese
+    
     
     private var showStagesSegue: AnyObserver<Void> {
         return NavigationSegue(fromViewController: self.navigationController!,
@@ -53,14 +55,29 @@ class ProductOverviewViewController: UIViewController {
         
         let totalBarWidth:CGFloat = self.waterBarContainer.bounds.width
         
-        let emissionValue: CGFloat = 27
-        let waterValue: CGFloat = 5.53
-        let wastageValue: CGFloat = 0
+        let emissionValue: CGFloat = CGFloat(foodForOverview.carbonFootprint)
+        let waterValue: CGFloat = CGFloat(foodForOverview.waterUsage)
+        let wastageValue: CGFloat = CGFloat(foodForOverview.foodWastage)
         
+        var emissionRelativity: CGFloat = 0
+        var waterRelativity: CGFloat = 0
+        var wastageRelativity: CGFloat = 0
         
-        let emissionRelativity: CGFloat = 100 / emissionValue
-        let waterRelativity = 100 / waterValue
-        let wastageRelativity = 100 / wastageValue
+        if emissionValue != CGFloat(0){
+            
+            emissionRelativity = 100 / emissionValue
+        }
+        
+        if waterValue != CGFloat(0){
+            
+            waterRelativity = 100 / waterValue
+        }
+        
+        if wastageValue != CGFloat(0){
+            
+            wastageRelativity = 100 / wastageValue
+        }
+        
         
         if emissionValue != CGFloat(0){
             
