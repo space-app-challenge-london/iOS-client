@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W5h-qw-Hwc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="W5h-qw-Hwc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -118,10 +118,22 @@
                                                                                             <constraint firstItem="2IW-mE-8tg" firstAttribute="leading" secondItem="46a-fx-N2u" secondAttribute="leading" id="rsH-m6-sfn"/>
                                                                                         </constraints>
                                                                                     </stackView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carbon emission" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prd-VY-UWo">
+                                                                                        <rect key="frame" x="114" y="48" width="171" height="21"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="21" id="09d-jV-JlA"/>
+                                                                                            <constraint firstAttribute="width" constant="171" id="Eog-dU-ZFP"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="prd-VY-UWo" secondAttribute="trailing" constant="20" id="5aL-QU-syE"/>
                                                                                     <constraint firstItem="46a-fx-N2u" firstAttribute="centerY" secondItem="Gj6-mZ-Dy6" secondAttribute="centerY" id="ZLT-Ea-25f"/>
+                                                                                    <constraint firstItem="prd-VY-UWo" firstAttribute="top" secondItem="46a-fx-N2u" secondAttribute="bottom" constant="8" id="ZzZ-QC-9hf"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="46a-fx-N2u" secondAttribute="trailing" constant="20" id="hbM-mp-pWU"/>
                                                                                     <constraint firstItem="46a-fx-N2u" firstAttribute="leading" secondItem="Gj6-mZ-Dy6" secondAttribute="leading" constant="20" id="uuY-o6-sAl"/>
                                                                                 </constraints>
@@ -192,12 +204,26 @@
                                                                                             <constraint firstAttribute="height" constant="10" id="bH5-i2-vxo"/>
                                                                                         </constraints>
                                                                                     </stackView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="water consumption" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-f9-p3b">
+                                                                                        <rect key="frame" x="63" y="48" width="222" height="21"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="2Hs-mi-4Zx"/>
+                                                                                            <constraint firstAttribute="width" constant="222" id="Bsa-87-fNg"/>
+                                                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="JgL-4m-YND"/>
+                                                                                            <constraint firstAttribute="height" constant="21" id="yQF-Po-hu0"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
+                                                                                    <constraint firstAttribute="trailing" secondItem="L7c-f9-p3b" secondAttribute="trailing" constant="20" id="DVA-mS-2sv"/>
                                                                                     <constraint firstItem="sI2-tZ-GwA" firstAttribute="leading" secondItem="DqT-Wl-yCP" secondAttribute="leading" constant="20" id="SyA-UE-IUt"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="sI2-tZ-GwA" secondAttribute="trailing" constant="20" id="amB-Kz-8jv"/>
                                                                                     <constraint firstItem="sI2-tZ-GwA" firstAttribute="centerY" secondItem="DqT-Wl-yCP" secondAttribute="centerY" id="fHU-ay-pM2"/>
+                                                                                    <constraint firstItem="L7c-f9-p3b" firstAttribute="top" secondItem="sI2-tZ-GwA" secondAttribute="bottom" constant="8" id="qNn-0W-Pb7"/>
                                                                                 </constraints>
                                                                             </view>
                                                                         </subviews>
@@ -266,12 +292,24 @@
                                                                                             <constraint firstAttribute="trailing" secondItem="Lek-EJ-lQM" secondAttribute="trailing" id="kSK-ON-TnZ"/>
                                                                                         </constraints>
                                                                                     </stackView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="percentage waste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq9-ge-wiV">
+                                                                                        <rect key="frame" x="137" y="47" width="148" height="21"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="148" id="gwf-D2-ewh"/>
+                                                                                            <constraint firstAttribute="height" constant="21" id="ys0-Lh-6wp"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="GQI-Nt-Cin" firstAttribute="leading" secondItem="hSX-6F-c9e" secondAttribute="leading" constant="20" id="35e-Wb-EK9"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="vq9-ge-wiV" secondAttribute="trailing" constant="20" id="K18-n7-ok2"/>
                                                                                     <constraint firstItem="GQI-Nt-Cin" firstAttribute="centerY" secondItem="hSX-6F-c9e" secondAttribute="centerY" id="WCu-Rn-nsG"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="GQI-Nt-Cin" secondAttribute="trailing" constant="20" id="ubj-53-1PV"/>
+                                                                                    <constraint firstItem="vq9-ge-wiV" firstAttribute="top" secondItem="GQI-Nt-Cin" secondAttribute="bottom" constant="7.5" id="x6Y-JW-HXO"/>
                                                                                 </constraints>
                                                                             </view>
                                                                         </subviews>
@@ -297,6 +335,7 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-9p-nLt">
                                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="128"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                                                 <state key="normal" title="More Details">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -344,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olH-3Y-4MA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="125"/>
+            <point key="canvasLocation" x="24.800000000000001" y="124.58770614692655"/>
         </scene>
     </scenes>
     <resources>

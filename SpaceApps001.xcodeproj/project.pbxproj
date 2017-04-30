@@ -314,7 +314,7 @@
 				TargetAttributes = {
 					A06F67551EB4D2D00043A2A6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M724KW23Q3;
+						DevelopmentTeam = 44Q2J6374R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -547,7 +547,7 @@
 			baseConfigurationReference = 011647AD471DBB178AB2C5A8 /* Pods-SpaceApps001.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M724KW23Q3;
+				DEVELOPMENT_TEAM = 44Q2J6374R;
 				INFOPLIST_FILE = SpaceApps001/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -562,7 +562,7 @@
 			baseConfigurationReference = 7F228F73C7291B813FCC0EAC /* Pods-SpaceApps001.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M724KW23Q3;
+				DEVELOPMENT_TEAM = 44Q2J6374R;
 				INFOPLIST_FILE = SpaceApps001/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
