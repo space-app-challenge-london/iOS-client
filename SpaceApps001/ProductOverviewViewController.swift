@@ -75,7 +75,7 @@ class ProductOverviewViewController: UIViewController {
         
         if wastageValue != CGFloat(0){
             
-            wastageRelativity = 30 / wastageValue
+            wastageRelativity = 100 / wastageValue
         }
         
         
