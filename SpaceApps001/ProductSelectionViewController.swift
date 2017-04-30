@@ -27,7 +27,7 @@ class ProductSelectionViewController: UIViewController {
                                                                                         return ProductOverviewViewController()
                                 }
                                 
-                                productSelection.headerImage = #imageLiteral(resourceName: "Cheese")
+                                productSelection.foodForOverview = DataFood.Cabbage//.headerImage = #imageLiteral(resourceName: "Cheese")
                                 return productSelection
         }).asObserver()
     }

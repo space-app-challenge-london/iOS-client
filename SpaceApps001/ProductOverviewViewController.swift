@@ -27,7 +27,7 @@ class ProductOverviewViewController: UIViewController {
     var headerImage: UIImage?
     var dataForFood = [DataStages]()
     
-    var foodForOverview = DataFood.Cheese
+    var foodForOverview: DataFood?// = DataFood.Cheese
     
     
     private var showStagesSegue: AnyObserver<Void> {
@@ -55,9 +55,9 @@ class ProductOverviewViewController: UIViewController {
         
         let totalBarWidth:CGFloat = self.waterBarContainer.bounds.width
         
-        let emissionValue: CGFloat = CGFloat(foodForOverview.carbonFootprint)
-        let waterValue: CGFloat = CGFloat(foodForOverview.waterUsage)
-        let wastageValue: CGFloat = CGFloat(foodForOverview.foodWastage)
+        let emissionValue: CGFloat = CGFloat(foodForOverview!.carbonFootprint)
+        let waterValue: CGFloat = CGFloat(foodForOverview!.waterUsage)
+        let wastageValue: CGFloat = CGFloat(foodForOverview!.foodWastage)
         
         var emissionRelativity: CGFloat = 0
         var waterRelativity: CGFloat = 0
@@ -101,11 +101,11 @@ class ProductOverviewViewController: UIViewController {
             wastageBarWidthConstraint.constant = 0.0
         }
         
-        
-        if self.headerImage != nil{
-            
-            self.headerImageView.image = self.headerImage!
-        }
+        self.headerImageView.image = UIImage(named: foodForOverview!.rawValue)
+//        if self.headerImage != nil{
+//            
+//            self.headerImageView.image = UIImage(named: foodForOverview!.rawValue)//self.headerImage!
+//        }
         
         stagesButton.rx.tap.bindTo(showStagesSegue).addDisposableTo(bag)
     }
