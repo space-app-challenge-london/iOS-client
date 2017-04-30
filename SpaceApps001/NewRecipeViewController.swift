@@ -9,6 +9,7 @@
 import UIKit
 import Cartography
 import RxSwift
+import RealmSwift
 
 class NewRecipeViewController: UIViewController {
 
@@ -27,13 +28,29 @@ class NewRecipeViewController: UIViewController {
         textfieldName.becomeFirstResponder()
     }
 
+    @objc private func save() {
+        let newRecipe = Recipe()
+        newRecipe.title = textfieldName.text!
+
+        let selectedProducts = listview.source.datas.filter { $0.selected }
+        let products = selectedProducts.map { product -> ProductRecipe in
+            let newProduct = ProductRecipe()
+            newProduct.title = product.title
+            newProduct.image = UIImagePNGRepresentation(product.image)!
+            return newProduct
+        }
+        newRecipe.products = List<ProductRecipe>(products)
+        newRecipe.save()
+        self.dismiss(animated: true, completion: nil)
+    }
+
     private func updateUI() {
         let count = listview.source.datas.filter { $0.selected }.count
         if textfieldName.text == nil || textfieldName!.text!.isEmpty || count == 0 {
             navigationItem.rightBarButtonItem = nil
             return
         }
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.save))
     }
 
     override func viewDidLoad() {

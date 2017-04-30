@@ -26,6 +26,7 @@
 		BBD0D9161EB56C2C00D3A613 /* ProductSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD0D9151EB56C2C00D3A613 /* ProductSelection.swift */; };
 		BBD0D91A1EB56EDD00D3A613 /* ProductSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD0D9181EB56EDD00D3A613 /* ProductSelectionTableViewCell.swift */; };
 		BBD0D91B1EB56EDD00D3A613 /* ProductSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD0D9191EB56EDD00D3A613 /* ProductSelectionTableViewCell.xib */; };
+		BBD0D91D1EB57DCD00D3A613 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD0D91C1EB57DCD00D3A613 /* Recipe.swift */; };
 		BBF5F3251EB5063100E6F064 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3241EB5063100E6F064 /* Root.storyboard */; };
 		BBF5F3291EB5068900E6F064 /* ProductSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */; };
 		BBF5F32E1EB5088500E6F064 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5F32D1EB5088500E6F064 /* UITableView+Extensions.swift */; };
@@ -60,6 +61,7 @@
 		BBD0D9151EB56C2C00D3A613 /* ProductSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSelection.swift; sourceTree = "<group>"; };
 		BBD0D9181EB56EDD00D3A613 /* ProductSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		BBD0D9191EB56EDD00D3A613 /* ProductSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		BBD0D91C1EB57DCD00D3A613 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BBF5F3241EB5063100E6F064 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		BBF5F3281EB5068900E6F064 /* ProductSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductSelection.storyboard; sourceTree = "<group>"; };
 		BBF5F32D1EB5088500E6F064 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				BBA2805B1EB5547F00A91514 /* MyCompositionViewController.swift */,
 				BBD0D9131EB5654600D3A613 /* NewRecipeViewController.swift */,
 				BBD0D9151EB56C2C00D3A613 /* ProductSelection.swift */,
+				BBD0D91C1EB57DCD00D3A613 /* Recipe.swift */,
 			);
 			name = MyComposition;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				BBF5F3311EB5088C00E6F064 /* CellType.swift in Sources */,
 				BB9423F71EB52EFB00E81E79 /* Product.swift in Sources */,
 				BB9423FA1EB53F1900E81E79 /* ListView.swift in Sources */,
+				BBD0D91D1EB57DCD00D3A613 /* Recipe.swift in Sources */,
 				BBD0D91A1EB56EDD00D3A613 /* ProductSelectionTableViewCell.swift in Sources */,
 				BBD0D9141EB5654600D3A613 /* NewRecipeViewController.swift in Sources */,
 			);
