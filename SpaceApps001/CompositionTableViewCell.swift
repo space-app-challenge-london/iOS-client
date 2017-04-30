@@ -15,8 +15,9 @@ class CompositionTableViewCell: UITableViewCell, CellType {
     @IBOutlet weak var labelCountProducts: UILabel!
 
     override func awakeFromNib() {
-        labelCountProducts.layer.cornerRadius = 15
         super.awakeFromNib()
+        labelCountProducts.layer.masksToBounds = true
+        labelCountProducts.layer.cornerRadius = 15
     }
 
     static func height(model: Recipe) -> CGFloat {

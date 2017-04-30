@@ -9,6 +9,9 @@ PODS:
     - Realm (= 2.5.1)
   - RxCocoa (3.3.1):
     - RxSwift (~> 3.3)
+  - RxRealm (0.5.2):
+    - RealmSwift (~> 2.4)
+    - RxSwift (~> 3.1)
   - RxSegue (1.0.0):
     - RxSwift (~> 3.0)
   - RxSwift (3.3.1)
@@ -20,6 +23,7 @@ DEPENDENCIES:
   - Cartography
   - RealmSwift
   - RxCocoa (~> 3.0)
+  - RxRealm
   - RxSegue
   - RxSwift (~> 3.0)
   - SwiftyJSON
@@ -31,10 +35,11 @@ SPEC CHECKSUMS:
   Realm: 32f86104d37c8521f864d4274050b38ba6190733
   RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
   RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
+  RxRealm: df024f04e64c3a9723dab63a6ec8621b3db6473f
   RxSegue: 0e90ebd3811a264d5db4e3c912c6540e57a84302
   RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: cd009e96c25271669f9730b78854594092dd0faf
+PODFILE CHECKSUM: 2c003547988cd7101d1a2e5bcf91c97593cce4fa
 
 COCOAPODS: 1.2.0

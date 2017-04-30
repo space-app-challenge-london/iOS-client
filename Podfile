@@ -15,4 +15,5 @@ target 'SpaceApps001' do
     pod 'SwiftyJSON'
     pod 'Cartography'
     pod 'RealmSwift'
+    pod 'RxRealm'
 end

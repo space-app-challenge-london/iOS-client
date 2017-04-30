@@ -9,11 +9,14 @@
 import UIKit
 import RxSwift
 import Cartography
+import RealmSwift
+import RxRealm
 
 class MyCompositionViewController: UIViewController {
 
     private let bag = DisposeBag()
     private let listview = ListView<CompositionTableViewCell, Recipe>()
+    private var token: NotificationToken!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,6 +26,11 @@ class MyCompositionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "My recipies"
+
+
+        token = (try! Realm()).addNotificationBlock { [weak self] _, _ in
+            self?.listview.source.datas = Recipe.all()
+        }
 
         view.addSubview(listview)
         view.sendSubview(toBack: listview)
