@@ -32,7 +32,7 @@ class MyCompositionViewController: UIViewController {
                                                                                       identifier: ProductStagesViewController.identifier) as? ProductStagesViewController else {
                                                                                         return ProductStagesViewController()
                                 }
-
+                                productSelection.titlePage = context.title
                                 productSelection.datasFood = context.products.map {
                                     return DataFood(rawValue: $0.title)!
                                 }

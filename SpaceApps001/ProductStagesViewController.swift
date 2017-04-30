@@ -17,6 +17,7 @@ class ProductStagesViewController: UIViewController {
     
     private var dataSource: DataSource<ProductStagesTableViewCell, ProcessStage>!
 
+    var titlePage: String?
     var datasFood = [DataFood]()
     var dataStages = [DataStages]()
 
@@ -25,7 +26,7 @@ class ProductStagesViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        title = "Stages"
+        title = titlePage ?? "Stages"
         
         configureTableview()
         
