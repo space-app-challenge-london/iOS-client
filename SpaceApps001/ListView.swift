@@ -19,7 +19,7 @@ class ListView<C, M>: UITableView, UITableViewDelegate where  C: CellType, M == 
         })
     }
 
-    private var source: DataSource<C, M>!
+    var source: DataSource<C, M>!
 
     private func comonInit(datas: [M] = []) {
         source = DataSource<C, M>(tableview: self, datas: datas)
@@ -43,6 +43,7 @@ class ListView<C, M>: UITableView, UITableViewDelegate where  C: CellType, M == 
     open func configureTableView() {
         self.registerCell(identifier: C.identifier)
         tableFooterView = UIView()
+        backgroundColor = UIColor.clear
         delegate = self
     }
 

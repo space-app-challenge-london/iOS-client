@@ -23,7 +23,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="iR8-G9-ZAE"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -35,7 +35,7 @@
                         </constraints>
                     </imageView>
                 </subviews>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.045224471830985914" colorSpace="custom" customColorSpace="displayP3"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="S4q-av-xfG" firstAttribute="leading" secondItem="lVp-VI-oLR" secondAttribute="trailing" constant="18" id="GEp-zg-hio"/>
                     <constraint firstItem="S4q-av-xfG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OaB-AU-ObI"/>
@@ -44,6 +44,7 @@
                     <constraint firstItem="lVp-VI-oLR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="frF-Mz-6CU"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="imageProduct" destination="lVp-VI-oLR" id="k3Y-8J-0ru"/>
                 <outlet property="labelTitle" destination="S4q-av-xfG" id="FwL-GV-6d0"/>
