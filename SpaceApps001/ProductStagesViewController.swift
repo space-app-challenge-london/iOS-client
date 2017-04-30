@@ -43,7 +43,6 @@ class ProductStagesViewController: UIViewController {
     private func configureTableview() {
         
         tableview.registerCell(identifier: ProductStagesTableViewCell.identifier)
-        tableview.registerCell(identifier: ProductStagesHeaderTableViewCell.identifier)
         tableview.tableFooterView = UIView()
         self.createStages()
         

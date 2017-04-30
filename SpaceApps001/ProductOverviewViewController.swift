@@ -18,8 +18,10 @@ class ProductOverviewViewController: UIViewController {
     @IBOutlet weak var waterBarContainer: UIView!
     @IBOutlet weak var emissionBarContainer: UIView!
     @IBOutlet weak var stagesButton: UIButton!
+    @IBOutlet weak var headerImageView: UIImageView!
     
     private let bag = DisposeBag()
+    var headerImage: UIImage?
     
     
     private var showStagesSegue: AnyObserver<Void> {
@@ -43,20 +45,12 @@ class ProductOverviewViewController: UIViewController {
         self.wastageBarController.setCorners()
         self.waterBarContainer.setCorners()
         
-        
-        
-//        stagesButton.addTarget(self, action: #selector(goToStages), for: .touchUpInside)
-//        stagesButton.rx.tap.subscribe(onNext: { [weak self]  in
-//            
-//            self?.performSegue(withIdentifier: "showStagesSegue", sender: self)
-//        }).addDisposableTo(bag)
+        if self.headerImage != nil{
+            
+            self.headerImageView.image = self.headerImage!
+        }
         
         stagesButton.rx.tap.bindTo(showStagesSegue).addDisposableTo(bag)
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
     
 
@@ -65,11 +59,6 @@ class ProductOverviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func goToStages(){
-        
-        self.performSegue(withIdentifier: "showStagesSegue", sender: self)
-    }
     
 
     /*
